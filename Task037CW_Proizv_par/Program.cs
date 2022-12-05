@@ -5,31 +5,48 @@
 // [6 7 3 6] -> 36 21
 
 Console.Clear();
-int dm = 35;
-int[] array = new int[dm];
-int[] arrayP = new int[dm / 2];
+const int SIZE = 5; 
+const int LEFTRANGE = 0;
+const int RIGHTRANGE = 10;
 
-FillArray(array);
+int[] array = FillArray(SIZE, LEFTRANGE, RIGHTRANGE);
 Console.WriteLine($"Массив после заполнения [{string.Join(", ", array)}]");
 
-arrayP = ProizvArray(array, dm / 2);
+int[] arrayP = ProizvArray(array);
 
-Console.WriteLine($"Массив заполненный произведениями [{string.Join(", ", arrayP)}]");
+Console.WriteLine($"Массив заполненный произведениями и непарным числом[{string.Join(", ", arrayP)}]");
 
-void FillArray(int[] collection)
+int[] FillArray(int size, int leftRange, int rightRange)
 {
-    for (int i = 0; i < array.Length; i++)
+    int[] arr = new int[size];
+    Random rand = new Random();
+
+    for (int i = 0; i < arr.Length; i++)
     {
-        array[i] = new Random().Next(0, 10);
+        arr[i] = rand.Next(leftRange, rightRange + 1);
     }
+    return arr;
 }
 
-int[] ProizvArray(int[] col, int dlinmas)
+int[] ProizvArray(int[] col)
 {
-    int[] proizv = new int[dlinmas];
-    for (int i = 0; i < col.Length / 2; i++)
+    int[] proizv;
+    if (col.Length % 2 == 0)
     {
-        proizv[i] = col[i] * col[col.Length - 1 - i];
+        proizv = new int[col.Length / 2];
+        for (int i = 0; i < col.Length / 2; i++)
+        {
+            proizv[i] = col[i] * col[col.Length - 1 - i];
+        }
+    }
+    else
+    {
+        proizv = new int[col.Length / 2 + 1];
+        for (int i = 0; i < col.Length / 2; i++)
+        {
+            proizv[i] = col[i] * col[col.Length - 1 - i];
+        }
+        proizv[col.Length / 2] = col[col.Length / 2];
     }
     return proizv;
 }
