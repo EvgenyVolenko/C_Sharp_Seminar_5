@@ -2,40 +2,38 @@
 // Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма положительных чисел равна 29, сумма отрицательных равна -20.
 
 Console.Clear();
-int sPol = 0;
-int[] array = new int[12];
+const int SIZE = 12; // const изменить нельзя
+const int LEFTRANGE = -9;
+const int RIGHTRANGE = 9;
 
-Console.WriteLine($"Первоначальный массив [{string.Join(", ", array)}]");
-FillArray(array);
+int[] array = FillArray(SIZE, LEFTRANGE, RIGHTRANGE);
+
 Console.WriteLine($"Массив после заполнения [{string.Join(", ", array)}]");
-bool plmin = true;
-Console.WriteLine($"Сумма положительных чисел = {SortArray(array, sPol, plmin)}");
-plmin = false;
-Console.WriteLine($"Сумма отрицательных чисел = {SortArray(array, sPol, plmin)}");
 
-void FillArray(int[] collection)
+(int sumP, int sumN) = GetSumPositiveAndNegative(array);
+
+Console.WriteLine($"Сумма положительных чисел = {sumP}, сумма отрицательных чисел = {sumN}");
+
+int[] FillArray(int size, int leftRange, int rightRange)
 {
-    for (int i = 0; i < array.Length; i++)
+    int[] arr = new int[size];
+    Random rand = new Random();
+
+    for (int i = 0; i < arr.Length; i++)
     {
-        array[i] = new Random().Next(-9, 10);
+        arr[i] = rand.Next(leftRange, rightRange + 1);
     }
+    return arr;
 }
 
-int SortArray(int[] col, int sum, bool pm)
+(int, int) GetSumPositiveAndNegative(int[] array)
 {
-    if (pm == true)
+    int sumPositive = 0;
+    int sumNegative = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-        for (int i = 0; i < array.Length; i++)
-        {
-            if (col[i] > 0) sum = sum + col[i];
-        }
+        if (array[i] > 0) sumPositive += array[i];
+        else sumNegative += array[i];
     }
-    else if (pm == false)
-    {
-        for (int i = 0; i < array.Length; i++)
-        {
-            if (col[i] < 0) sum = sum + col[i];
-        }
-    }
-    return sum;
+    return (sumPositive, sumNegative);
 }
