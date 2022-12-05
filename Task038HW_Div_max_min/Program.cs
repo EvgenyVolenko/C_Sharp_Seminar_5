@@ -4,6 +4,8 @@
 
 Console.Clear();
 int digit;
+const int LEFTRANGE = -100;
+const int RIGHTRANGE = 100;
 
 Console.Write("Введите длинну массива: ");
 
@@ -13,18 +15,21 @@ while (true)
     else Console.Write("Ну просил же ЧИСЛО: ");
 }
 
-int[] array = new int[digit];
+int[] array = FillArray(digit, LEFTRANGE, RIGHTRANGE);
 
-FillArray(array);
 Console.WriteLine($"Массив после заполнения [{string.Join(", ", array)}]");
 Console.WriteLine($"Разница между максимальным и минимальным элементами массива = {DivArray(array)}");
 
-void FillArray(int[] collection)
+int[] FillArray(int size, int leftRange, int rightRange)
 {
-    for (int i = 0; i < array.Length; i++)
+    int[] arr = new int[size];
+    Random rand = new Random();
+
+    for (int i = 0; i < arr.Length; i++)
     {
-        array[i] = new Random().Next(1, 1000);
+        arr[i] = rand.Next(leftRange, rightRange + 1);
     }
+    return arr;
 }
 
 int DivArray(int[] col)
