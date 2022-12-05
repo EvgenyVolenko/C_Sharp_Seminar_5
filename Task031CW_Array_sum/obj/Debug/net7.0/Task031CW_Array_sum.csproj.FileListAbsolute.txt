@@ -1,0 +1,15 @@
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\bin\Debug\net7.0\Task031CW_Array_sum.exe
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\bin\Debug\net7.0\Task031CW_Array_sum.deps.json
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\bin\Debug\net7.0\Task031CW_Array_sum.runtimeconfig.json
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\bin\Debug\net7.0\Task031CW_Array_sum.dll
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\bin\Debug\net7.0\Task031CW_Array_sum.pdb
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.csproj.AssemblyReference.cache
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.GeneratedMSBuildEditorConfig.editorconfig
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.AssemblyInfoInputs.cache
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.AssemblyInfo.cs
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.csproj.CoreCompileInputs.cache
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.dll
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\refint\Task031CW_Array_sum.dll
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.pdb
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\Task031CW_Array_sum.genruntimeconfig.cache
+G:\!!!!!ARC\Evgeny\!!!GB\YaDisk\YandexDisk\!!! Обучение GB\Разработчик - junior\Курс - Знакомство с языками программирования\Seminar_5\Task031CW_Array_sum\obj\Debug\net7.0\ref\Task031CW_Array_sum.dll
