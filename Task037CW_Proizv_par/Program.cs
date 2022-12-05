@@ -5,7 +5,7 @@
 // [6 7 3 6] -> 36 21
 
 Console.Clear();
-const int SIZE = 5; 
+const int SIZE = 15; 
 const int LEFTRANGE = 0;
 const int RIGHTRANGE = 10;
 
@@ -30,23 +30,16 @@ int[] FillArray(int size, int leftRange, int rightRange)
 
 int[] ProizvArray(int[] col)
 {
-    int[] proizv;
-    if (col.Length % 2 == 0)
-    {
-        proizv = new int[col.Length / 2];
-        for (int i = 0; i < col.Length / 2; i++)
+    int[] proizv = new int[col.Length / 2 + col.Length % 2];
+
+    for (int i = 0; i < col.Length / 2; i++)
         {
             proizv[i] = col[i] * col[col.Length - 1 - i];
         }
-    }
-    else
+
+    if (col.Length % 2 != 0)
     {
-        proizv = new int[col.Length / 2 + 1];
-        for (int i = 0; i < col.Length / 2; i++)
-        {
-            proizv[i] = col[i] * col[col.Length - 1 - i];
-        }
-        proizv[col.Length / 2] = col[col.Length / 2];
+        proizv[proizv.Length - 1] = col[col.Length / 2];
     }
     return proizv;
 }
